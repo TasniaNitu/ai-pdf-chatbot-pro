@@ -1,0 +1,87 @@
+question,expected,actual,correct,score,type
+What is a tuple?,number of values separated by commas,"A tuple consists of a number of values separated by commas, for instance: >>> t = 12345, 54321, 'hello!' >>> t[0] 12345 >>> t (12345, 54321, 'hello!') >>> # Tuples may be nested: ... u = t, (1, 2, 3, 4, 5) >>> u ((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))",True,0.833,factual
+Give an example of a tuple?,for instance,"A tuple consists of a number of values separated by commas, for instance: 
+
+>>> t = 12345, 54321, 'hello!'",True,0.5,factual
+What are tuples used for?,different situations and for different purposes than lists,"Tuples are used for different situations and purposes, often in contrast to lists. They are immutable, usually contain a heterogeneous sequence of elements accessed via unpacking or indexing, and can contain mutable objects.",True,0.571,factual
+What is a list?,compound data type used to group together other values,"A list is a compound data type, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.",True,0.889,factual
+What is a dictionary?,associative memories,A dictionary is an associative array where arbitrary keys are mapped to values.,True,0.5,factual
+What is a set?,unordered collection with no duplicate elements,A set is an unordered collection with no duplicate elements.,True,0.879,factual
+What is a module?,organizational unit of Python code,A module is an object that serves as an organizational unit of Python code.,True,0.8,factual
+What is a function?,named function,A function object is defined corresponding to methods of its instances.,True,0.5,factual
+What is an exception?,derived from the Exception class,"""Exceptions should typically be derived from the Exception class, either directly or indirectly.""",True,0.8,factual
+What is a class?,bundling data and functionality together,A class provides a means of bundling data and functionality together.,True,0.8,factual
+What is the Python tutorial about?,Python tutorial,"The Python tutorial, Release 3.7.0, provides an informal introduction to the basic concepts and features of the Python language and system. It covers a wide range of topics, including:
+
+1. The history and background of Python, as mentioned in Chapter 18 ""An Informal Introduction to Python"" and Appendix B ""About these documents"".
+2. The tutorial's purpose and scope, which is to introduce readers to the basics of Python and provide hands-on experience with the language (Chapter 3).
+3. The availability and distribution of the Python interpreter, standard library, and third-party modules, tools, and documentation from the official Python website (https://www.python.org/).
+4. The flexibility of Python as an extension language for customizable applications, as mentioned in Chapter 11 ""Brief Tour of the Standard Library — Part II"".
+5. The tutorial's approach to object-oriented programming, data structures, and syntax.
+6. The importance of understanding the Python interpreter and standard library for scripting and rapid application development.
+
+Throughout the document, there are references to additional resources, such as books and indexes, which provide more in-depth information on specific topics.
+
+The tutorial is written by Guido van Rossum and the Python development team, with a publication date of September 02, 2018, and is maintained by the Python Software Foundation.",True,1.0,summary
+List all chapters.,Whetting Your Appetite Using the Python Interpreter An Informal Introduction to Python More Control Flow Tools Data Structures Modules Input and Output Errors and Exceptions What Now,"Based on the provided document context, here is a comprehensive list of major topics, chapters, and themes:
+
+1. **Introduction to dir()**: The dir() function lists all names defined in the current namespace.
+2. **Built-in Functions and Variables**: The doc explains that built-in functions and variables are defined in the standard module 'builtins'.
+3. **Packages**: Python's module namespace is structured using ""dotted module names"", which helps avoid global variable name conflicts between modules.
+4. **String Formatting**: The document covers two methods for string formatting: % operator (asprintf-style format string) and str.zfill().
+5. **Looping Techniques**: The chapter on Looping Techniques introduces the enumerate() function, which is convenient when iterating over indices of a sequence.
+6. **Logging**: Chapter 11.5 Logging discusses logging tools in Python.
+7. **Weak References**: Chapter 11.6 Weak References explains weak references and their usage.
+8. **Tools for Working with Lists**: Chapter 11.7 Tools for Working with Lists covers various tools and techniques for manipulating lists.
+9. **Decimal Floating Point Arithmetic**: Chapter 11.8 Decimal Floating Point Arithmetic discusses decimal floating-point arithmetic in Python.
+10. **Virtual Environments and Packages**: Chapter 12 Introduction to virtual environments and packages, including creating and managing virtual environments with pip.
+11. **Interactive Input Editing and History Substitution**: Chapters 14 Interactive Input Editing and History Substitution cover tab completion, history editing, and alternatives to the interactive interpreter.
+
+These chapters cover a wide range of topics in Python programming, from basic syntax and data structures to advanced features like logging, weak references, and package management.",False,0.222,structure
+What are the major topics covered?,data structures modules exceptions classes functions,"The major topics covered in this Python Tutorial (Release 3.7.0) include:
+
+1. An Informal Introduction to Python: Chapter 3 provides a gentle introduction to the basics of Python, covering its syntax, data types, and basic operations.
+2. Modules: Chapter 6 delves into the world of modules in Python, explaining how to import, use, and create custom modules.
+3. Classes: Chapter 9 explores the concept of classes and objects in Python, providing a comprehensive guide to creating and using classes.
+4. Standard Library: Chapters 10-12 discuss various aspects of the standard library, including modules for file I/O, networking, and other essential tasks.
+5. Brief Tour of the Standard Library - Part II: Chapter 11 provides a more in-depth look at the standard library, covering topics such as data structures, time and date manipulation, and exception handling.
+6. Glossary: The document includes a glossary that defines various Python-related terms and concepts.
+
+These chapters provide a solid foundation for learning Python, covering essential topics such as data types, modules, classes, and the standard library. They also introduce readers to more advanced concepts, ensuring a comprehensive understanding of the language.
+
+Additionally, the document provides information on:
+
+* Resources for further learning, including books, online documentation, and mailing lists.
+* Tips for contributing to the Python community and documenting the language itself.
+* A list of contributors to the Python documentation.",True,0.5,themes
+What is the capital of France?,I couldn't find that in the document.,I couldn't find that in the document.,True,1.0,negative
+Who won the FIFA World Cup 2022?,I couldn't find that in the document.,I couldn't find that in the document.,True,1.0,negative
+What is the population of Tokyo?,I couldn't find that in the document.,I couldn't find that in the document.,True,1.0,negative
+Explain Python modules.,file containing Python definitions and statements,"A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended. Within a module, the module's name (as a string) is available as the value of the global variable __name__.",True,0.833,explanatory
+Explain Python exceptions.,derived from the Exception class,"1. Programs may name their own exceptions by creating a new exception class (seeClasses for more aboutPython classes).
+
+2. Exceptions should typically be derived from theException class, either directly or indirectly.
+
+3. Exception classes can be defined which do anything any other class can do, but are usually kept simple, often only offering a number of attributes that allow information about the error to be extracted by handlers for the exception.
+
+4. When creating a module that can raise several distinct errors, a common practice is to create a base class for exceptions defined by that module, and subclass that to create specific exception classes for different error conditions.
+
+5. Built-in exceptions are listed in the built-in exceptions and their meanings document (bltin-exceptions).
+
+6. Standard exception names are built-in identifiers (not reserved keywords).
+
+7. The string printed as the exception type is the name of the built-in exception that occurred, this is true for all built-in exceptions but need not be true for user-defined exceptions.
+
+8. Exceptions come in different types, and the type is printed as part of the message.
+
+9. Standard exception names are built-in identifiers (not reserved keywords).
+
+10. A user-generated interruption is signalled by raising theKeyboardInterrupt exception.
+
+11. Exception handlers don’t just handle exceptions if they occur immediately in the try clause, but also if they occur inside functions that are called (even indirectly) in the try clause.
+
+12. The raise statement allows the programmer to force a specified exception to occur.
+
+13. The sole argument toraise indicates the exception to be raised. This must be either an exception instance or the name of the built-in exception to be raised.",True,1.0,explanatory
+What is a for loop in Python?,iterates over items of any sequence,"A for loop in Python behaves as if it were a list, but it's actually an object that returns successive items of the desired sequence when iterated over.",True,0.5,factual
+What does the document cover overall?,Python tutorial covering data structures modules classes functions and exceptions,"The document covers various aspects of Python documentation, including the development and creation of the documentation itself, contributors to the Python language and documentation, function annotations, output formatting options using modules such as reprlib, pprint, and textwrap, and the concept of Python Enhancement Proposals (PEPs) for proposing new features and design decisions. Additionally, it touches on concepts related to provisional APIs and namespaces. Overall, the document provides an overview of tools and techniques used in creating and manipulating Python documentation, as well as guidance on contributing to the Python project.",False,0.222,summary

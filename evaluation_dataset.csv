@@ -1,0 +1,21 @@
+question,expected_answer,type
+What is a tuple?,number of values separated by commas,factual
+Give an example of a tuple?,for instance,factual
+What are tuples used for?,different situations and for different purposes than lists,factual
+What is a list?,compound data type used to group together other values,factual
+What is a dictionary?,associative memories,factual
+What is a set?,unordered collection with no duplicate elements,factual
+What is a module?,organizational unit of Python code,factual
+What is a function?,named function,factual
+What is an exception?,derived from the Exception class,factual
+What is a class?,bundling data and functionality together,factual
+What is the Python tutorial about?,Python tutorial,summary
+List all chapters.,Whetting Your Appetite Using the Python Interpreter An Informal Introduction to Python More Control Flow Tools Data Structures Modules Input and Output Errors and Exceptions What Now,structure
+What are the major topics covered?,data structures modules exceptions classes functions,themes
+What is the capital of France?,I couldn't find that in the document.,negative
+Who won the FIFA World Cup 2022?,I couldn't find that in the document.,negative
+What is the population of Tokyo?,I couldn't find that in the document.,negative
+Explain Python modules.,file containing Python definitions and statements,explanatory
+Explain Python exceptions.,derived from the Exception class,explanatory
+What is a for loop in Python?,iterates over items of any sequence,factual
+What does the document cover overall?,Python tutorial covering data structures modules classes functions and exceptions,summary
