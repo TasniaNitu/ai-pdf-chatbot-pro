@@ -120,10 +120,14 @@ A demo GIF demonstrating the full workflow is included at the top of this reposi
 
 ## Example Questions
 
-* What is a tuple?
-* What is a class?
-* What is a module?
-* What is an exception?
+After uploading a PDF, users can ask questions such as:
+
+- Summarize this document.
+- What are the main topics covered?
+- Explain Chapter 3.
+- What conclusions does the document present?
+- What does the document say about [topic]?
+- List the key points from this PDF.
 
 ## Future Improvements
 
