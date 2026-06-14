@@ -97,6 +97,26 @@ Run the application:
 ```bash
 streamlit run app.py
 ```
+## Deployment Notes
+
+This project uses Ollama for local LLM inference and is designed to run locally on the user's machine.
+
+To use the chatbot:
+
+1. Install Ollama
+2. Download the Llama 3.2 model:
+
+   ```bash
+   ollama pull llama3.2
+   ```
+3. Start Ollama
+4. Run the Streamlit application:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+A demo GIF demonstrating the full workflow is included at the top of this repository.
 
 ## Example Questions
 
